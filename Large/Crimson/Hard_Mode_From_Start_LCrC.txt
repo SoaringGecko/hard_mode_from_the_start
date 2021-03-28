@@ -1,0 +1,23 @@
+This is part of my series of worlds that start in hardmode.
+
+Naming convention: Hard Mode From Start-XXyXX
+[X]XyXX - World Size (L = Large; M = Medium; S = Small)
+X[Xy]XX - Evil Biome (Co = Corruption; Cr = Crimson; D = Drunk)
+XXy[X]X - Difficulty (J = Journey; C = Classic; E = Expert; M = Master)
+XXyX[X] - For the Worthy (if the world is "For the Worthy" it will have an F here, otherwise there won't be a letter)
+
+World Info:
+
+World Name - Hard Mode From Start-LCrC
+
+World Size - Large
+
+Evil Biome - Crimson
+
+Difficulty - Classic
+
+For the Worthy - No
+
+Seed - 26237992
+
+World File - Hard_Mode_From_Start_LCrC.wld
