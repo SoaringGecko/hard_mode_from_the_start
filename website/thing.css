@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    background-color: #394e87;
+    color: #fff;
+}
+
+div.header {
+    background-color: #394e87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.header,
+a {
+    color: #fff;
+}
+
+.logo {
+    background-color: #2b3865;
+    border-radius: 13px;
+    position: relative;
+    transform: translateY(25%);
+    margin-right: 5px;
+}
+
+.body div {
+    background-color: #2b3865;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.body div h2,
+h3,
+p,
+form {
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input {
+    background-color: #252954;
+    border-color: #313139;
+    color: white;
+    border-radius: 10px;
+}
+
+input:focus {
+    border-color: #e6d4a4;
+}
+
+hr {
+    color: rgb(68, 90, 164);
+    background-color: rgb(68, 90, 164);
+    border: none;
+    height: 5px;
+}
+
+
+/* #wldLink {
+    display: none;
+} */
+
+#Large,
+#Medium,
+#Small {
+    overflow: hidden;
+}
+
+.Large,
+.Medium,
+.Small {
+    cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.rLarge,
+.rMedium,
+.rSmall {
+    cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+.rrLarge,
+.rrMedium,
+.rrSmall {
+    cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+    transition: ease;
+    transition-duration: 0.5s;
+    -moz-transform: rotate(180deg);
+    /* FF3.5+ */
+    -o-transform: rotate(180deg);
+    /* Opera 10.5 */
+    -webkit-transform: rotate(180deg);
+    /* Saf3.1+, Chrome */
+    transform: rotate(180deg);
+}
+
+#Large {
+    height: auto;
+}
+
+#Medium {
+    height: auto;
+}
+
+#Small {
+    height: auto;
+}
+
+.largeWld::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 26px;
+    height: 26px;
+    background-image: url('../Large_world_icon.png');
+}
+
+.mediumWld::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 22px;
+    height: 22px;
+    background-image: url('../Medium_world_icon.png');
+}
+
+.smallWld::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 18px;
+    height: 18px;
+    background-image: url('../Small_world_icon.png');
+}
+
+.corruption::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 22px;
+    height: 20px;
+    background-image: url('../Corruption_icon.png');
+}
+
+.crimson::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 18px;
+    height: 22px;
+    background-image: url('../Crimson_icon.png');
+}
+
+.drunk::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 40px;
+    height: 22px;
+    background: url('../Corruption_icon.png'), url('../Crimson_icon.png') right;
+    background-repeat: no-repeat;
+}
+
+.journey::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 18px;
+    height: 24px;
+    background-image: url('../Journey_mode_icon.png');
+}
+
+.classic::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 18px;
+    height: 24px;
+    background-image: url('../Classic_mode_icon.png');
+}
+
+.expert::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 18px;
+    height: 26px;
+    background-image: url('../Expert_mode_icon.png');
+}
+
+.master::after {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 18px;
+    height: 26px;
+    background-image: url('../Master_mode_icon.png');
+}
+
+.ftw {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    transform: translatey(25%);
+    width: 22px;
+    height: 22px;
+    background-image: url('../Bestiary_Boss_Enemy.png');
+}

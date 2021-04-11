@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Mode From The Start</title>
+    <link rel="stylesheet" href="thing.css">
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div class="header">
+        <h1 class="header"><img src="../Icon.png" alt="logo" class="logo">Hard Mode From The Start</h1>
+    </div>
+    <div class="body">
+        <div class="description">
+            <h2>What is this:</h2>
+            <p>This is a series of Terraria worlds that start in hardmode.</p>
+            <p>Naming convention: Hard Mode From Start-XXyXX<br />[X]XyXX - World Size (L = Large; M = Medium; S = Small)<br />X[Xy]XX - Evil Biome (Co = Corruption; Cr = Crimson; D = Drunk)<br />XXy[X]X - Difficulty (J = Journey; C = Classic; E = Expert;
+                M = Master)<br />XXyX[X] - For the Worthy (if the world is "For the Worthy" it will have an F here, otherwise there won't be a letter)</p>
+            <p><a href="https://steamcommunity.com/workshop/filedetails/?id=2439790512">Click here to go to the collection on Steam Workshop</a></p>
+        </div>
+
+        <div class="worlds">
+            <h2>Worlds:</h2>
+            <h3>Filters:</h3>
+            <!-- <p><a href="corruption">Corruption</a> <a href="crimson">Crimson</a> <a href="drunk">Drunk</a> <a href="classic">Classic</a> <a href="expert">Expert</a> <a href="master">Master</a> <a href="ftw">For The Worthy</a></p> -->
+            <p>
+                <label for="radioCorruption">Corruption:</label><input type="radio" name="evilBiome" id="radioCorruption" value="radioCorruption">
+                <label for="radioCrimson">Crimson:</label><input type="radio" name="evilBiome" id="radioCrimson" value="radioCrimson">
+                <label for="radioDrunk">Drunk:</label><input type="radio" name="evilBiome" id="radioDrunk" value="radioDrunk">
+                <label for="radioAllx">All:</label><input type="radio" name="evilBiome" id="radioAllx" value="radioAllx" checked>
+            </p>
+            <p>
+                <label for="radioJourney">Journey:</label><input type="radio" name="Difficulty" id="radioJourney" value="radioJourney">
+                <label for="radioClassic">Classic:</label><input type="radio" name="Difficulty" id="radioClassic" value="radioClassic">
+                <label for="radioExpert">Expert:</label><input type="radio" name="Difficulty" id="radioExpert" value="radioExpert">
+                <label for="radioMaster">Master:</label><input type="radio" name="Difficulty" id="radioMaster" value="radioMaster">
+                <label for="radioAllz">All:</label><input type="radio" name="Difficulty" id="radioAllz" value="radioAllz" checked>
+            </p>
+            <p>
+                <label for="checkFTW">For The Worthy:</label><input type="checkbox" name="checkFTW" id="checkFTW" checked>
+            </p>
+            <hr>
+            <h3 class="Large">Large: <span class="rLarge">▲</span></h3>
+            <div id="Large">
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439751824">Hard Mode From Start-LCoJ <span class="largeWld"></span><span class="corruption"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439747952">Hard Mode From Start-LCoC <span class="largeWld"></span><span class="corruption"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439750057">Hard Mode From Start-LCoE <span class="largeWld"></span><span class="corruption"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439753090">Hard Mode From Start-LCoM <span class="largeWld"></span><span class="corruption"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439752659">Hard Mode From Start-LCoJF <span class="largeWld"></span><span class="corruption"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439749433">Hard Mode From Start-LCoCF <span class="largeWld"></span><span class="corruption"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439751034">Hard Mode From Start-LCoEF <span class="largeWld"></span><span class="corruption"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439753533">Hard Mode From Start-LCoMF <span class="largeWld"></span><span class="corruption"></span><span class="master"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439756093">Hard Mode From Start-LCrJ <span class="largeWld"></span><span class="crimson"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439754083">Hard Mode From Start-LCrC <span class="largeWld"></span><span class="crimson"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439755062">Hard Mode From Start-LCrE <span class="largeWld"></span><span class="crimson"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439757060">Hard Mode From Start-LCrM <span class="largeWld"></span><span class="crimson"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439756467">Hard Mode From Start-LCrJF <span class="largeWld"></span><span class="crimson"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439754520">Hard Mode From Start-LCrCF <span class="largeWld"></span><span class="crimson"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439755571">Hard Mode From Start-LCrEF <span class="largeWld"></span><span class="crimson"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439757689">Hard Mode From Start-LCrMF <span class="largeWld"></span><span class="crimson"></span><span class="master"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439760409">Hard Mode From Start-LDJ <span class="largeWld"></span><span class="drunk"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439758388">Hard Mode From Start-LDC <span class="largeWld"></span><span class="drunk"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439759719">Hard Mode From Start-LDE <span class="largeWld"></span><span class="drunk"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439761421">Hard Mode From Start-LDM <span class="largeWld"></span><span class="drunk"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439760909">Hard Mode From Start-LDJF <span class="largeWld"></span><span class="drunk"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439759007">Hard Mode From Start-LDCF <span class="largeWld"></span><span class="drunk"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439760052">Hard Mode From Start-LDEF <span class="largeWld"></span><span class="drunk"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439761861">Hard Mode From Start-LDMF <span class="largeWld"></span><span class="drunk"></span><span class="master"></span><span class="ftw"></span></a></p>
+            </div>
+            <hr>
+            <h3 class="Medium">Medium: <span class="rMedium">▲</span></h3>
+            <div id="Medium">
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439764728">Hard Mode From Start-MCoJ <span class="mediumWld"></span><span class="corruption"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439762686">Hard Mode From Start-MCoC <span class="mediumWld"></span><span class="corruption"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439763622">Hard Mode From Start-MCoE <span class="mediumWld"></span><span class="corruption"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439765783">Hard Mode From Start-MCoM <span class="mediumWld"></span><span class="corruption"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439765193">Hard Mode From Start-MCoJF <span class="mediumWld"></span><span class="corruption"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439763042">Hard Mode From Start-MCoCF <span class="mediumWld"></span><span class="corruption"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439764358">Hard Mode From Start-MCoEF <span class="mediumWld"></span><span class="corruption"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439766142">Hard Mode From Start-MCoMF <span class="mediumWld"></span><span class="corruption"></span><span class="master"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439769305">Hard Mode From Start-MCrJ <span class="mediumWld"></span><span class="crimson"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439766792">Hard Mode From Start-MCrC <span class="mediumWld"></span><span class="crimson"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439767769">Hard Mode From Start-MCrE <span class="mediumWld"></span><span class="crimson"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439770355">Hard Mode From Start-MCrM <span class="mediumWld"></span><span class="crimson"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439769910">Hard Mode From Start-MCrJF <span class="mediumWld"></span><span class="crimson"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439767351">Hard Mode From Start-MCrCF <span class="mediumWld"></span><span class="crimson"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439768672">Hard Mode From Start-MCrEF <span class="mediumWld"></span><span class="crimson"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439770741">Hard Mode From Start-MCrMF <span class="mediumWld"></span><span class="crimson"></span><span class="master"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439773558">Hard Mode From Start-MDJ <span class="mediumWld"></span><span class="drunk"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439771447">Hard Mode From Start-MDC <span class="mediumWld"></span><span class="drunk"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439772455">Hard Mode From Start-MDE <span class="mediumWld"></span><span class="drunk"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439774295">Hard Mode From Start-MDM <span class="mediumWld"></span><span class="drunk"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439773837">Hard Mode From Start-MDJF <span class="mediumWld"></span><span class="drunk"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439771945">Hard Mode From Start-MDCF <span class="mediumWld"></span><span class="drunk"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439772942">Hard Mode From Start-MDEF <span class="mediumWld"></span><span class="drunk"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439774603">Hard Mode From Start-MDMF <span class="mediumWld"></span><span class="drunk"></span><span class="master"></span><span class="ftw"></span></a></p>
+            </div>
+            <hr>
+            <h3 class="Small">Small: <span class="rSmall">▲</span></h3>
+            <div id="Small">
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439777361">Hard Mode From Start-SCoJ <span class="smallWld"></span><span class="corruption"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439775075">Hard Mode From Start-SCoC <span class="smallWld"></span><span class="corruption"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439776340">Hard Mode From Start-SCoE <span class="smallWld"></span><span class="corruption"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439777944">Hard Mode From Start-SCoM <span class="smallWld"></span><span class="corruption"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439777361">Hard Mode From Start-SCoJF <span class="smallWld"></span><span class="corruption"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439775912">Hard Mode From Start-SCoCF <span class="smallWld"></span><span class="corruption"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439776938">Hard Mode From Start-SCoEF <span class="smallWld"></span><span class="corruption"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439778346">Hard Mode From Start-SCoMF <span class="smallWld"></span><span class="corruption"></span><span class="master"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439781400">Hard Mode From Start-SCrJ <span class="smallWld"></span><span class="crimson"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439778672">Hard Mode From Start-SCrC <span class="smallWld"></span><span class="crimson"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439779354">Hard Mode From Start-SCrE <span class="smallWld"></span><span class="crimson"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439782318">Hard Mode From Start-SCrM <span class="smallWld"></span><span class="crimson"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439781747">Hard Mode From Start-SCrJF <span class="smallWld"></span><span class="crimson"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439778951">Hard Mode From Start-SCrCF <span class="smallWld"></span><span class="crimson"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439779746">Hard Mode From Start-SCrEF <span class="smallWld"></span><span class="crimson"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439782721">Hard Mode From Start-SCrMF <span class="smallWld"></span><span class="crimson"></span><span class="master"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439785433">Hard Mode From Start-SDJ <span class="smallWld"></span><span class="drunk"></span><span class="journey"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439783182">Hard Mode From Start-SDC <span class="smallWld"></span><span class="drunk"></span><span class="classic"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439783807">Hard Mode From Start-SDE <span class="smallWld"></span><span class="drunk"></span><span class="expert"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439786218">Hard Mode From Start-SDM <span class="smallWld"></span><span class="drunk"></span><span class="master"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439785772">Hard Mode From Start-SDJF <span class="smallWld"></span><span class="drunk"></span><span class="journey"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439783466">Hard Mode From Start-SDCF <span class="smallWld"></span><span class="drunk"></span><span class="classic"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439784175">Hard Mode From Start-SDEF <span class="smallWld"></span><span class="drunk"></span><span class="expert"></span><span class="ftw"></span></a></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439786634">Hard Mode From Start-SDMF <span class="smallWld"></span><span class="drunk"></span><span class="master"></span><span class="ftw"></span></a></p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <script>
+        var large = "0";
+        var medium = "0";
+        var small = "0";
+        var x = "radioAllx";
+        var z = "radioAllz";
+        var y = 1;
+        $("#Medium").toggle("fast");
+        $("#Small").toggle("fast");
+        $("#Large").toggle("fast");
+        $(".Large").click(function(e) {
+            $("#Large").toggle("fast");
+            if (large == "0") {
+                $('.rLarge').addClass('rrLarge').removeClass('rLarge');
+                large = "1";
+            } else {
+                $('.rrLarge').addClass('rLarge').removeClass('rrLarge');
+                large = "0";
+            }
+        });
+
+        $(".Medium").click(function(e) {
+            $("#Medium").toggle("fast");
+            if (medium == "0") {
+                $('.rMedium').addClass('rrMedium').removeClass('rMedium');
+                medium = "1";
+            } else {
+                $('.rrMedium').addClass('rMedium').removeClass('rrMedium');
+                medium = "0";
+            }
+        });
+
+        $(".Small").click(function(e) {
+            $("#Small").toggle("fast");
+            if (small == "0") {
+                $('.rSmall').addClass('rrSmall').removeClass('rSmall');
+                small = "1";
+            } else {
+                $('.rrSmall').addClass('rSmall').removeClass('rrSmall');
+                small = "0";
+            }
+        });
+
+        $('input[type=radio][name=evilBiome]').change(function() {
+            x = this.value;
+        });
+
+        $('input[type=radio][name=Difficulty]').change(function() {
+            z = this.value;
+        });
+
+        $('input[type=checkbox][name=checkFTW]').change(function() {
+            if ($(this).is(':checked')) {
+                y = 1;
+            } else {
+                y = 0;
+            }
+            radioCheck();
+        });
+
+        $('input[type=radio]').change(function() {
+            radioCheck();
+        });
+
+        function radioCheck() {
+            /* CORRUPTION CHECK */
+            if (x == "radioCorruption") {
+                if (z == "radioJourney") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioClassic") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.classic').parent().parent().css("display", "block");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioExpert") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioMaster") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.master').parent().parent().css("display", "block");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.master').parent().parent().css("display", "block");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioAllz") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+            }
+            /* CRIMSON CHECK */
+            if (x == "radioCrimson") {
+                if (z == "radioJourney") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioClassic") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                }
+                if (z == "radioExpert") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioMaster") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.master').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.master').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioAllz") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+            }
+
+            /* DRUNK CHECK */
+            if (x == "radioDrunk") {
+                if (z == "radioJourney") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioClassic") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.classic').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioExpert") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioMaster") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.master').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.master').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (z == "radioAllz") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.corruption').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+            }
+
+            /* JOURNEY CHECK */
+            if (z == "radioJourney") {
+                if (x == "radioCorruption") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioCrimson") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioDrunk") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioAllx") {
+                    if (y == "1") {
+                        $('.journey').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.journey').parent().parent().css("display", "block");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+            }
+
+            /* CLASSIC CHECK */
+            if (z == "radioClassic") {
+                if (x == "radioCorruption") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.classic').parent().parent().css("display", "block");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioCrimson") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.classic').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioDrunk") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.classic').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioAllx") {
+                    if (y == "1") {
+                        $('.classic').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.expert').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.classic').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.expert').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+            }
+
+            /* EXPERT CHECK */
+            if (z == "radioExpert") {
+                if (x == "radioCorruption") {
+                    if (y == "1") {
+                        $('.corruption').parent().parent().css("display", "block");
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.corruption').parent().parent().css("display", "block");
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioCrimson") {
+                    if (y == "1") {
+                        $('.crimson').parent().parent().css("display", "block");
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.drunk').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.crimson').parent().parent().css("display", "block");
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.drunk').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioDrunk") {
+                    if (y == "1") {
+                        $('.drunk').parent().parent().css("display", "block");
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.corruption').parent().parent().css("display", "none");
+                        $('.crimson').parent().parent().css("display", "none");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.drunk').parent().parent().css("display", "block");
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.corruption').parent().parent().css("display", "none");
+                    $('.crimson').parent().parent().css("display", "none");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+                if (x == "radioAllx") {
+                    if (y == "1") {
+                        $('.expert').parent().parent().css("display", "block");
+                        $('.journey').parent().parent().css("display", "none");
+                        $('.classic').parent().parent().css("display", "none");
+                        $('.master').parent().parent().css("display", "none");
+                        return false;
+                    }
+                    $('.expert').parent().parent().css("display", "block");
+                    $('.journey').parent().parent().css("display", "none");
+                    $('.classic').parent().parent().css("display", "none");
+                    $('.master').parent().parent().css("display", "none");
+                    $('.ftw').parent().parent().css("display", "none");
+                    return false;
+                }
+            }
+
+            if (y == "1") {
+                $('.wldLink').css("display", "block");
+                return false;
+            }
+            $('.wldLink').css("display", "block");
+            $('.ftw').parent().parent().css("display", "none");
+        }
+    </script>
+</body>
+
+</html>

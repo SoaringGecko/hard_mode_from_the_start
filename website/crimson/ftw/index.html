@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Mode From The Start</title>
+    <link rel="stylesheet" href="../../thing.css">
+    <link rel="shortcut icon" href="../../icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div class="header">
+        <h1 class="header"><img src="../../Icon.png" alt="logo" class="logo">Hard Mode From The Start</h1>
+    </div>
+    <div class="body">
+        <div class="description">
+            <h2>What is this:</h2>
+            <p>This is a series of Terraria worlds that start in hardmode.</p>
+            <p>Naming convention: Hard Mode From Start-XXyXX<br />[X]XyXX - World Size (L = Large; M = Medium; S = Small)<br />X[Xy]XX - Evil Biome (Co = Corruption; Cr = Crimson; D = Drunk)<br />XXy[X]X - Difficulty (J = Journey; C = Classic; E = Expert;
+                M = Master)<br />XXyX[X] - For the Worthy (if the world is "For the Worthy" it will have an F here, otherwise there won't be a letter)</p>
+            <p><a href="https://steamcommunity.com/workshop/filedetails/?id=2439790512">Click here to go to the collection on Steam Workshop</a></p>
+        </div>
+
+        <div class="worlds">
+            <h2>Worlds:</h2>
+            <h3>Filters:</h3>
+            <p><a href="../../">Crimson</a><a href="../">For The Worthy</a><br><a href="../corruption/">Corruption</a> <a href="../drunk/">Drunk</a> <a href="classic">Classic</a> <a href="expert">Expert</a> <a href="master">Master</a></p>
+            <hr>
+            <h3 class="Large">Large: <span class="rLarge">▲</span></h3>
+            <div id="Large">
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439756467">Hard Mode From Start-LCrJF</a> <span class="largeWld"></span><span class="crimson"></span><span class="journey"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439754520">Hard Mode From Start-LCrCF</a> <span class="largeWld"></span><span class="crimson"></span><span class="classic"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439755571">Hard Mode From Start-LCrEF</a> <span class="largeWld"></span><span class="crimson"></span><span class="expert"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439757689">Hard Mode From Start-LCrMF</a> <span class="largeWld"></span><span class="crimson"></span><span class="master"></span><span class="ftw"></span></p>
+            </div>
+            <hr>
+            <h3 class="Medium">Medium: <span class="rMedium">▲</span></h3>
+            <div id="Medium">
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439769910">Hard Mode From Start-MCrJF</a> <span class="mediumWld"></span><span class="crimson"></span><span class="journey"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439767351">Hard Mode From Start-MCrCF</a> <span class="mediumWld"></span><span class="crimson"></span><span class="classic"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439768672">Hard Mode From Start-MCrEF</a> <span class="mediumWld"></span><span class="crimson"></span><span class="expert"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439770741">Hard Mode From Start-MCrMF</a> <span class="mediumWld"></span><span class="crimson"></span><span class="master"></span><span class="ftw"></span></p>
+            </div>
+            <hr>
+            <h3 class="Small">Small: <span class="rSmall">▲</span></h3>
+            <div id="Small">
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439781747">Hard Mode From Start-SCrJF</a> <span class="smallWld"></span><span class="crimson"></span><span class="journey"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439778951">Hard Mode From Start-SCrCF</a> <span class="smallWld"></span><span class="crimson"></span><span class="classic"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439779746">Hard Mode From Start-SCrEF</a> <span class="smallWld"></span><span class="crimson"></span><span class="expert"></span><span class="ftw"></span></p>
+                <p class="wldLink"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2439782721">Hard Mode From Start-SCrMF</a> <span class="smallWld"></span><span class="crimson"></span><span class="master"></span><span class="ftw"></span></p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <script>
+        var large = "0";
+        var medium = "0";
+        var small = "0";
+        $("#Medium").toggle("fast");
+        $("#Small").toggle("fast");
+        $("#Large").toggle("fast");
+        $(".Large").click(function(e) {
+            $("#Large").toggle("fast");
+            if (large == "0") {
+                $('.rLarge').addClass('rrLarge').removeClass('rLarge');
+                large = "1";
+            } else {
+                $('.rrLarge').addClass('rLarge').removeClass('rrLarge');
+                large = "0";
+            }
+        });
+
+        $(".Medium").click(function(e) {
+            $("#Medium").toggle("fast");
+            if (medium == "0") {
+                $('.rMedium').addClass('rrMedium').removeClass('rMedium');
+                medium = "1";
+            } else {
+                $('.rrMedium').addClass('rMedium').removeClass('rrMedium');
+                medium = "0";
+            }
+        });
+
+        $(".Small").click(function(e) {
+            $("#Small").toggle("fast");
+            if (small == "0") {
+                $('.rSmall').addClass('rrSmall').removeClass('rSmall');
+                small = "1";
+            } else {
+                $('.rrSmall').addClass('rSmall').removeClass('rrSmall');
+                small = "0";
+            }
+        });
+    </script>
+</body>
+
+</html>
